@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label>Numero</label>
+    <input type="text" name="num" id="num">
+
+    
+
+    <button onclick="verificar()">ok</button> 
+    <div id="saida"></div>
+
+</body>
+
+</html>
+<script>
+    function verificar(){
+         numero = document.getElementById("num").value 
+        var A = 0;
+        var B = 0;
+        
+        if ( numero > 0){
+            A = numero;
+           
+        }
+        else {
+            B = numero
+                     
+            
+        }
+        document.getElementById("saida").innerHTML = "Positivo"+A+"<br>"+ "Negativo"+B ;
+        
+    }
+</script>
