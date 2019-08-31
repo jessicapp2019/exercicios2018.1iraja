@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label>Digite a 1° nota</label>
+    <input type="text" name="nt1" id="nt1"></input>
+    <label>Digite a 2° nota</label>
+    <input type="text" name="nt2" id="nt2"></input>
+    <label>Digite a 3° nota</label>
+    <input type="text" name="nt3" id="nt3"></input>
+    <label>Digite a 4° nota </label>
+    <input type="text" name="nt4" id="nt4"></input>
+    <button onclick="nota()">ok</button>
+    <div id= "saida"></div>
+</body>
+</html>
+<script>                                       
+    function nota(){
+        var nota1 = parseFloat(document.getElementById("nt1").value)
+        var nota2 = parseFloat(document.getElementById("nt2").value)
+        var nota3 = parseFloat(document.getElementById("nt3").value)
+        var nota4 = parseFloat(document.getElementById("nt4").value)
+        media =(nota1 + nota2 + nota3 + nota4) / 4
+       
+        if  
+        (media >= 5){
+            
+            document.getElementById("saida").innerHTML = "o aluno foi aprovado com Média " + media;
+        }
+        else{
+            document.getElementById("saida").innerHTML = "o aluno não foi aprovado " + media ;
+        }
+    }
+</script>  
