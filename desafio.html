@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>desafio-aula5</title>
+</head>
+<body>
+    <label>Digite o numero que deseje ver a tabuada: </label>
+    <input type="text" name="valor" id="valor">
+    <button onclick="tabuada()">Ok</button>
+
+    <div id="saida"></div>
+</body>
+
+</html>
+
+<script>
+
+    function tabuada(){
+            var valor = document.getElementById("valor").value
+            for(count=1; count<=10; count++){
+                    document.write(valor + " X " + count + " = " + (count*valor)+"<br>");
+            }
+    }
+</script>
